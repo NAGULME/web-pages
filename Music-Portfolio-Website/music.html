@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nagul_meera</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        
+
+.login_bg{
+    position: absolute;
+    width: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+    overflow-x:scroll;
+}
+nav{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: rgb(230, 11, 11);
+    font-size:58px;
+}
+.logo:hover{
+    color: rgb(238, 190, 15);
+    transition: 0.3s;
+}
+
+span{
+    color: greenyellow;
+}
+nav ul li{
+    list-style-type: none;
+      display:inline-block;
+      padding: 10px 10px;
+}
+nav ul li  a {
+    color: ghostwhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a :hover{
+    color: rgb(125, 242, 23);
+    transition: .3s;
+}
+.cover {
+    border: 1px solid #000000;
+    background-color: rgba(0,0,0, 0.6);
+    text-align: center;
+    margin-left: 450px;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px 7px;
+    opacity: 0.9;
+}
+.coverimg img{
+    border-radius: 60px;
+}
+.text{
+    color: ghostwhite;
+}
+.text:hover{
+color: greenyellow;
+transition: .3s;
+}
+p{
+    font-size: 12px;
+}
+.line{
+   
+    border-bottom: 2px solid white;
+}
+.musicply{
+    position: absolute;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    font-size: 14px;
+}
+
+.music-player {
+    --primary-color: #ddd;
+    --secondary-color: #999;
+    --green-color: #2d5;
+    margin-top: 350px;
+    
+    --padding: 1em;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 7rem;
+    padding: var(--padding);
+    color: var(--primary-color);
+}
+i{
+    color: var(--secondary-color);
+}
+i:hover{
+    color: var(--primary-color);
+}
+.song-bar {
+    position: absolute;
+    left: var(--padding);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 25%;
+}
+
+.song-infos {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.image-container {
+    --size: 4.5em;
+    flex-shrink: 0;
+    width: var(--size);
+    height: var(--size);
+}
+.image-container img {
+    width: 100%;
+    height: 130%;
+    object-fit: cover;
+}
+.song-description p {
+    margin: 0.2em;
+}
+.title,
+.artist {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.title:hover,
+.artist:hover {
+    text-decoration: underline;
+}
+.artist{
+    color: var(--secondary-color);
+}
+.icons{
+    display: flex;
+    gap: 1em;
+}
+.progress-controller{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    color: var(--secondary-color);
+}
+.control-buttons{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.play-pause{
+    display: inline-block;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: #111;
+    border-radius: 50%;
+}
+.play-pause:hover{
+    transform: scale(1.1);
+    color: #111;
+}
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.progress-bar{
+    height: 4px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #ccc4;
+}
+.progress{
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+.progress-bar:hover .progress{
+    background-color: var(--green-color);
+}
+.progress-bar:hover .progress::after{
+    content: "";
+    position: absolute;
+    --size: 1em;
+    width: var(--size);
+    height: var(--size);
+    right: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: translate(50%, calc(2px - 50%));
+}
+.other-features{
+    position: absolute;
+    right: var(--padding);
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.volume-bar{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+.volume-bar .progress-bar{
+    width: 6em;
+}
+.volume-bar .progress-bar:hover .progress::after{
+    --size: .8em;
+}
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/736x/1d/08/ed/1d08edd9e229574d26e8330520e37df1.jpg" alt="connect internet" class="login_bg">
+
+    <div>
+    <div class="meera">
+        <nav>
+             <h2 class="logo">N.<span>music</span></h2>
+        
+        <ul>
+            <li><a href="#">File</a></li>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">view</a></li>
+            <li><a href="#">Playback</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+        </nav>
+        
+    </div>
+    <div class="cover">
+        
+        <div class="coverimg">
+            <img src="https://res.cloudinary.com/dxi76chcp/image/upload/v1706873633/WhatsApp_Image_2024-02-02_at_17.01.41_ukpfro.jpg" alt="album" height="200px" width="200px" >
+            <div class="text">
+                <h1><b>Ney Veyrey....</b></h1>
+                <p>nagul meera</p>
+            </div>
+            <div class="line">
+                <i  aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="music-player">
+        <div class="song-bar">
+            <div class="song-infos">
+                <div class="image-container">
+                    <img src="https://res.cloudinary.com/dxi76chcp/image/upload/v1706894546/WhatsApp_Image_2024-02-02_at_17.01.48_1_n7wwey.jpg" alt="my song" />
+                </div>
+                <div class="song-description">
+                    <p class="title">
+                        Ney Veyrey
+                    </p>
+                    <p class="artist">Shaik nagul meera</p>
+                </div>
+            </div>
+            <div class="icons">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-compress"></i>
+            </div>
+        </div>
+        <div class="progress-controller">
+            <div class="control-buttons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="play-pause fas fa-play"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-undo-alt"></i>
+            </div>
+            <div class="progress-container">
+                <span>0:49</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span>3:15</span>
+            </div>
+        </div>
+        <div class="other-features">
+            <i class="fas fa-list-ul"></i>
+            <i class="fas fa-desktop"></i>
+            <div class="volume-bar">
+                <i class="fas fa-volume-down"></i>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+</body>
+</html>
