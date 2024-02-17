@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+.login{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+}
+.login_bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.login_form{
+    position: relative;
+    margin-left: 55%;
+    height: 100%;
+    
+color: var(--white-color);
+backdrop-filter: blur(50px);
+
+    background-color: rgb(244,202,44);
+    border: 2px solid hsla(0,0%,100%,.7);
+    padding: 2.5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+   justify-content: center;
+}
+.login_title {
+    text-align: center;
+    font-family: 'Sevillana', cursive;
+    font-size: 40px;
+    color: rgb(34, 32, 32);
+   
+}
+
+.login_input1{
+    row-gap: 1px;
+    margin-bottom: 1rem;
+    border: 2px solid hsla(0, 0%, 5%, 0.7);
+    width: 400px;
+    border-radius: 10px;
+    
+    
+}
+.btn{
+    color: ghostwhite;
+    background: black;
+    margin-bottom: 1rem;
+    border: 2px solid hsla(0, 0%, 0%, 0.7);
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
