@@ -1,0 +1,21 @@
+Description:
+This repository contains the HTML and CSS files for a startup company's portfolio website. The website showcases the company's services, achievements, and contact information. It is designed using HTML for structure and CSS for styling, featuring modern design elements and animations.
+
+Features:
+
+Responsive Design: The website is designed to be responsive, ensuring compatibility across various devices and screen sizes.
+Navigation: Users can easily navigate through different sections of the website using the navigation menu.
+Social Media Integration: Links to the company's social media profiles are provided for easy access.
+Video Content: The website includes video content to showcase the company's solutions and services.
+Contact Information: Users can find contact information, including phone number and email address, to get in touch with the company.
+Usage:
+To view the website, open the index.html file in a web browser.
+
+Contributing:
+Contributions to this project are welcome! Feel free to fork the repository, make changes, and submit pull requests.
+
+License:
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Author:
+shaik nagul meera
